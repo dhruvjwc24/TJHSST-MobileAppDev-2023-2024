@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">First Really Fun App</string>
+    <string name="increment">Increment</string>
+    <string name="greeting">Hello Dhruv</string>
+    <string name="decrement">Decrement</string>
+    <string name="divide">Divide</string>
+    <string name="multiply">Multiply</string>
+</resources>
