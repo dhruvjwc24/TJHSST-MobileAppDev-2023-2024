@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/layout2_vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50"/>
+    
+    <TextView
+        android:id="@+id/layout2_top_textview"
+        android:layout_width="@dimen/layout2_length_big"
+        android:layout_height="@dimen/layout2_length_big"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/layout2_a_textview"
+        android:layout_width="@dimen/layout2_length_small"
+        android:layout_height="@dimen/layout2_length_small"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/layout2_vertical_guideline"/>
+    <TextView
+        android:id="@+id/layout2_b_textview"
+        android:layout_width="@dimen/layout2_length_small"
+        android:layout_height="@dimen/layout2_length_small"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/layout2_a_textview"
+        app:layout_constraintEnd_toStartOf="@id/layout2_a_textview"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

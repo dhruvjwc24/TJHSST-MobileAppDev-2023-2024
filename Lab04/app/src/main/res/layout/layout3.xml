@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/layout3_vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/layout3_horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/layout3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/layout3_horizontal_guideline"
+        app:layout_constraintStart_toStartOf="@id/layout3_vertical_guideline"
+        android:text="Button"
+        android:width="@dimen/layout3_button_width"
+        android:height="@dimen/layout3_button_height"/>
+
+    <TextView
+        android:id="@+id/layout3_top_textview"
+        android:layout_width="@dimen/layout3_textview_big_width"
+        android:layout_height="@dimen/layout3_textview_big_height"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/layout3_button"
+        app:layout_constraintStart_toStartOf="@id/layout3_vertical_guideline" />
+
+    <TextView
+        android:id="@+id/layout3_middle_textview"
+        android:layout_width="@dimen/layout3_textview_small_side"
+        android:layout_height="@dimen/layout3_textview_small_side"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="@id/layout3_horizontal_guideline"
+        app:layout_constraintBottom_toBottomOf="@id/layout3_horizontal_guideline"
+        app:layout_constraintStart_toStartOf="@id/layout3_vertical_guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/layout3_bottom_textview"
+        android:layout_width="@dimen/layout3_textview_small_side"
+        android:layout_height="@dimen/layout3_textview_small_side"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/layout3_middle_textview"
+        app:layout_constraintEnd_toEndOf="@id/layout3_middle_textview"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

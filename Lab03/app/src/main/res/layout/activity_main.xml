@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_msain_layout"
+    android:background="@color/cardview_dark_background">
+
+
+    <TextView
+        android:id="@+id/topLeftTextView"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="topLeft"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+    />
+
+    <TextView
+        android:id="@+id/bottomRightTextView"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:tag="bottomRight"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomLeftButton"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tag="bottomLeft"
+        android:textSize="@dimen/textSize"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topRightButton"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="topRight"
+        android:textSize="@dimen/textSize"
+    />
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="5"
+        android:max="100"
+        android:progress="30"
+        android:progressTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

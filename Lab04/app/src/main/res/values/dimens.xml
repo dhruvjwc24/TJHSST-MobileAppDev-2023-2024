@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout1_length">150dp</dimen>
+    <dimen name="layout1_textSize">30sp</dimen>
+
+    <dimen name="layout2_length_big">150dp</dimen>
+    <dimen name="layout2_length_small">75dp</dimen>
+
+    <dimen name="layout3_button_width">300dp</dimen>
+    <dimen name="layout3_button_height">75dp</dimen>
+    <dimen name="layout3_textview_big_height">75dp</dimen>
+    <dimen name="layout3_textview_big_width">250dp</dimen>
+    <dimen name="layout3_textview_small_side">75dp</dimen>
+
+    <dimen name="layout4_textview_big_side">112.5dp</dimen>
+    <dimen name="layout4_size4">150dp</dimen>
+    <dimen name="layout4_size3">112.5dp</dimen>
+    <dimen name="layout4_size2">75dp</dimen>
+    <dimen name="layout5_button_width">200</dimen>
+    <dimen name="layout5_button_height">75</dimen>
+
+    <dimen name="layout5_margin_top">25</dimen>
+    <dimen name="layout5_text_size">30</dimen>
+    <dimen name="layout6_scrollview_height">75</dimen>
+    <dimen name="layout6_button_height">50</dimen>
+
+</resources>

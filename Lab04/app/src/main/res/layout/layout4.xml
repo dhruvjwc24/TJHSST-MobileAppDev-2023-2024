@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/layout4_vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/layout4_horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <TextView
+        android:id="@+id/layout4_topleft_textview"
+        android:layout_width="@dimen/layout4_textview_big_side"
+        android:layout_height="@dimen/layout4_textview_big_side"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/layout4_3x4_middleleft_textview"
+        android:layout_width="@dimen/layout4_size3"
+        android:layout_height="@dimen/layout4_size4"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/layout4_horizontal_guideline"
+        app:layout_constraintStart_toStartOf="@id/layout4_vertical_guideline"
+        app:layout_constraintEnd_toEndOf="@id/layout4_vertical_guideline"/>
+
+    <TextView
+        android:id="@+id/layout4_4x4_textview"
+        android:layout_width="@dimen/layout4_size4"
+        android:layout_height="@dimen/layout4_size4"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="@id/layout4_horizontal_guideline"
+        app:layout_constraintBottom_toBottomOf="@id/layout4_horizontal_guideline"
+        app:layout_constraintStart_toStartOf="@id/layout4_vertical_guideline"/>
+
+    <TextView
+        android:id="@+id/layout4_3x3_textview"
+        android:layout_width="@dimen/layout4_size3"
+        android:layout_height="@dimen/layout4_size3"
+        android:background="@color/brown"
+        app:layout_constraintTop_toTopOf="@id/layout4_horizontal_guideline"
+        android:layout_marginLeft="@dimen/layout4_size2"
+        app:layout_constraintStart_toStartOf="@id/layout4_4x4_textview"/>
+
+    <TextView
+        android:id="@+id/layout4_2x2_textview"
+        android:layout_width="@dimen/layout4_size2"
+        android:layout_height="@dimen/layout4_size2"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="@id/layout4_4x4_textview"
+        app:layout_constraintBottom_toBottomOf="@id/layout4_4x4_textview"
+        app:layout_constraintStart_toStartOf="@id/layout4_4x4_textview"
+        app:layout_constraintEnd_toEndOf="@id/layout4_4x4_textview"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

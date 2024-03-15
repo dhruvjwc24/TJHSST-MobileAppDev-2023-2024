@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/layout1_topleft_textview"
+        android:textSize="@dimen/layout1_textSize"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="@dimen/layout1_length"
+        android:layout_height="@dimen/layout1_length"
+        android:text="Top Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/layout1_topright_textview"
+        android:textSize="@dimen/layout1_textSize"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="@dimen/layout1_length"
+        android:layout_height="@dimen/layout1_length"
+        android:text="Top Right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/layout1_bottomleft_textview"
+        android:textSize="@dimen/layout1_textSize"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="@dimen/layout1_length"
+        android:layout_height="@dimen/layout1_length"
+        android:text="Bottom Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/layout1_bottomright_textview"
+        android:textSize="@dimen/layout1_textSize"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="@dimen/layout1_length"
+        android:layout_height="@dimen/layout1_length"
+        android:text="Bottom Right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
