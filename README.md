@@ -1,0 +1,1 @@
+This repository contains my work for a Mobile App Development Class, completed in Android Studio. It contains various labs that test various asthetic and technical skills along with a final cumulative project in which I reproduced the game Pong. 
